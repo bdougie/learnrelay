@@ -55,7 +55,7 @@ Next, let's modify our `AddNew` and `PokemonPreview` components to redirect to t
 // src/components/AddNew.js
 
 import {Link} from 'react-router'                // Import Link component
-class AddNew extends React.Component {
+export default class AddNew extends React.Component {
   render () {
     return (
       <Link to='/create' className={classes.link}>           // When it gets clicked, redirect to the "/create" path
